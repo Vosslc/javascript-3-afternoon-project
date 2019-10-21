@@ -22,7 +22,7 @@ var carDetails = {
 */
 
 //Code Here
-
+const  {color, make, model, year} = carDetails;
 
 
 ////////// PROBLEM 2 //////////
@@ -35,7 +35,7 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
-  
+  let {firstName, lastName, title} = obj;
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -54,8 +54,18 @@ function greeting( obj ) {
 */
 
 //Code Here
+obj = {
+  utah: 1,
+  california: 2,
+  texas: 3,
+  arizona: 3
+}
 
-
+function totalPopulation (obj){
+  let {utah, california, texas, arizona} = obj;
+  return utah + california + texas + arizona;
+  
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -69,7 +79,11 @@ function greeting( obj ) {
 
 //Code Here
 
-
+function ingredients(objFood){
+  let newFood = [''];
+  let { carb, fat, protein } = objFood;
+  newFood = objFood.push();
+}
 
 ////////// PROBLEM 5 //////////
 

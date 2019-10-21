@@ -89,8 +89,17 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
 */
 
 //Code Here
-let myStrongest // = monstersInYourPocket.filter(/* Provide Your Callback Here */)
+// let myStrongest = monstersInYourPocket.filter(monster => {
+//   if( moster["CP"] > 200){
+//     return monster
+//   }
 
+
+// }) // = monstersInYourPocket.filter(/* Provide Your Callback Here */)
+
+let myStrongest = monstersInYourPocket.filter(monster => monster.CP > 200)
+
+console.log(myStrongest)
 
 
 ////////// PROBLEM 5 //////////
@@ -125,6 +134,7 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
 /*
   Use a high order method to create to get the sum of bobsTotal.
 */
+
 
 let bobsTotal //Code Here
 

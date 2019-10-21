@@ -52,6 +52,22 @@ var employees = [
 
 //Code Here
 
+function recordCleaner(){
+  // myCar.accidents.forEach(accidents => accidents.atFaultForAccident = false)
+  myCar.accidents.map(accidents => {
+    accidents.atFaultForAccident = false
+  })
+  // for(let key in myCar){
+  //   if(key === "accidents"){
+  //     for(let i = 0; i < myCar[key].length; i++){
+  //       myCar[key][i].atFaultForAccident = false
+  //     }
+  //   }
+  // }
+  return myCar
+}
+recordCleaner()
+
 
 
 ////////// PROBLEM 2 //////////
@@ -100,6 +116,7 @@ var cat = {
 var grumpyActivity;
 var fluffy2ndFriend;
 
+let gumpyAct2 = grumpyActivity 
 
 
 ////////// PROBLEM 4 //////////
